@@ -2,6 +2,21 @@
 
 A local Windows desktop application for turning Bank of America credit-card and debit-account PDF statements into a compact Excel expense report.
 
+## Project requirements
+
+The verified current-state product requirements are documented in [`requirements/`](requirements/README.md). The root `requirements.txt` remains the Python dependency file.
+
+## Development and testing
+
+Install the runtime and pytest dependencies, then run the isolated test suite:
+
+```powershell
+py -m pip install -r requirements-dev.txt
+py -m pytest -q
+```
+
+Tests are stored in [`tests/`](tests/README.md) and trace covered behavior to the stable project requirement IDs. The initial suite covers `FR-001` without opening the real desktop interface or writing to the application's local data directories.
+
 ## Run it
 
 1. Install Python 3.10 or newer.
