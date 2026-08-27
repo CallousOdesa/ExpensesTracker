@@ -1,6 +1,10 @@
 __pycache__/
+.pytest_cache/
+.pytest-runtime/
+.venv/
+.coverage
+htmlcov/
 data/
 output/
 *.pyc
-output/
 input/

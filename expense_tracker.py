@@ -750,5 +750,10 @@ class App(tk.Tk):
         self.destroy()
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Start the desktop application event loop."""
     App().mainloop()
+
+
+if __name__ == "__main__":
+    main()
